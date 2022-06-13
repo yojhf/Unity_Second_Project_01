@@ -5,10 +5,15 @@ using UnityEngine;
 public class DoorTrigger : MonoBehaviour
 {
     [SerializeField] GameObject door;
+    [SerializeField] GameObject door1_1;
     [SerializeField] GameObject light;
+
+
 
     public int h_count = 0;
     public static int floor = 0;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +29,7 @@ public class DoorTrigger : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        //첫번째 트리거
         if(floor == 0 && h_count == 1){
             floor += 1;
             light.GetComponent<Light>().color = new Color(0, 255, 0, 255);
@@ -54,9 +60,13 @@ public class DoorTrigger : MonoBehaviour
         if(floor == 3 && h_count == 3)
         {
             door.transform.localEulerAngles = new Vector3(0, 0, 0);
+            door1_1.transform.localEulerAngles = new Vector3(0, 180, 0);
             light.GetComponent<Light>().color = new Color(0, 255, 255, 255);
-            light.GetComponent<Light>().range = 4.5F;
+            light.GetComponent<Light>().range = 0.8F;
             Debug.Log("작동");
         }
+
+
+      
     }
 }

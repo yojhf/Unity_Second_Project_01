@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 33529698950572666}
   - component: {fileID: 23464649511875860}
   - component: {fileID: 95843662348448172}
+  - component: {fileID: 7351392932737787830}
   m_Layer: 0
   m_Name: CardboardBox3
   m_TagString: Untagged
@@ -104,3 +105,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7351392932737787830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1861626704312130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b206e04d2bb7a8489c36ef0ec0609f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door2: {fileID: 0}
+  door2_1: {fileID: 0}
+  light2: {fileID: 0}
+  h_count: 0
