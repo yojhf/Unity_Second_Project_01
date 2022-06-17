@@ -5548,15 +5548,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2261057276556505346, guid: f101a2b4504c3d04a95511ba8b3543e3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -23.422
+      value: -15.131
       objectReference: {fileID: 0}
     - target: {fileID: 2261057276556505346, guid: f101a2b4504c3d04a95511ba8b3543e3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.966
+      value: 5.041
       objectReference: {fileID: 0}
     - target: {fileID: 2261057276556505346, guid: f101a2b4504c3d04a95511ba8b3543e3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10.493
+      value: -15.006
       objectReference: {fileID: 0}
     - target: {fileID: 2261057276556505346, guid: f101a2b4504c3d04a95511ba8b3543e3, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5611,7 +5611,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!114 &150301752
 MonoBehaviour:
@@ -5625,20 +5625,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8545a0f2d246b874c98ce167fa75ed1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key_lock: {fileID: 150301746}
-  key_lock_2: {fileID: 1736447368}
-  skull: {fileID: 0}
-  skull_2: {fileID: 0}
-  knife: {fileID: 0}
-  knife_2: {fileID: 0}
-  goblet: {fileID: 0}
-  goblet_2: {fileID: 0}
-  key: {fileID: 0}
-  key_2: {fileID: 0}
+  obj1: {fileID: 150301746}
+  obj2: {fileID: 1736447368}
   wood: {fileID: 1717966119}
-  light: {fileID: 0}
-  light2: {fileID: 0}
-  obj: 1
 --- !u!65 &150301753
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27919,20 +27908,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8545a0f2d246b874c98ce167fa75ed1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key_lock: {fileID: 0}
-  key_lock_2: {fileID: 0}
-  skull: {fileID: 0}
-  skull_2: {fileID: 0}
-  knife: {fileID: 0}
-  knife_2: {fileID: 0}
-  goblet: {fileID: 892684137}
-  goblet_2: {fileID: 524580305}
-  key: {fileID: 0}
-  key_2: {fileID: 0}
+  obj1: {fileID: 892684137}
+  obj2: {fileID: 524580305}
   wood: {fileID: 1717966119}
-  light: {fileID: 0}
-  light2: {fileID: 0}
-  obj: 4
 --- !u!65 &892684144
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28554,20 +28532,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8545a0f2d246b874c98ce167fa75ed1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key_lock: {fileID: 0}
-  key_lock_2: {fileID: 0}
-  skull: {fileID: 922087283}
-  skull_2: {fileID: 179680015}
-  knife: {fileID: 0}
-  knife_2: {fileID: 0}
-  goblet: {fileID: 0}
-  goblet_2: {fileID: 0}
-  key: {fileID: 0}
-  key_2: {fileID: 0}
+  obj1: {fileID: 922087283}
+  obj2: {fileID: 179680015}
   wood: {fileID: 1717966119}
-  light: {fileID: 0}
-  light2: {fileID: 0}
-  obj: 2
 --- !u!65 &922087289
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32576,7 +32543,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1065731733}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.687, y: -0.033, z: 0.949}
+  m_LocalPosition: {x: 0.69, y: -0.033, z: 0.54}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -39874,7 +39841,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 3967265757108510945, guid: f101a2b4504c3d04a95511ba8b3543e3, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6895031509859720304, guid: f101a2b4504c3d04a95511ba8b3543e3, type: 3}
+    - {fileID: 7615726822119726547, guid: f101a2b4504c3d04a95511ba8b3543e3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f101a2b4504c3d04a95511ba8b3543e3, type: 3}
 --- !u!4 &1321454388 stripped
 Transform:
@@ -40736,7 +40709,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2350066920135643178, guid: f5709a3035aa0ca4d94745aaf44038fd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.94
+      value: 4.91
       objectReference: {fileID: 0}
     - target: {fileID: 2350066920135643178, guid: f5709a3035aa0ca4d94745aaf44038fd, type: 3}
       propertyPath: m_LocalPosition.z
@@ -50217,6 +50190,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shelf_Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 6822879176331142234, guid: 559f839e0f294cf499731ff6070352ac, type: 3}
+      propertyPath: m_TagString
+      value: wood
+      objectReference: {fileID: 0}
     - target: {fileID: 6822879176331573370, guid: 559f839e0f294cf499731ff6070352ac, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -50305,20 +50282,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8545a0f2d246b874c98ce167fa75ed1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key_lock: {fileID: 150301746}
-  key_lock_2: {fileID: 1736447368}
-  skull: {fileID: 922087283}
-  skull_2: {fileID: 179680015}
-  knife: {fileID: 2107449767}
-  knife_2: {fileID: 1434701521}
-  goblet: {fileID: 892684137}
-  goblet_2: {fileID: 524580305}
-  key: {fileID: 1994899689}
-  key_2: {fileID: 1700847276}
+  obj1: {fileID: 0}
+  obj2: {fileID: 0}
   wood: {fileID: 1717966119}
+--- !u!114 &1717966130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717966119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 397580079d93717479c372be6f0e66f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obj1: {fileID: 1736447368}
+  obj2: {fileID: 179680015}
+  obj3: {fileID: 1434701521}
+  obj4: {fileID: 524580305}
+  obj5: {fileID: 1700847276}
   light: {fileID: 1238581473}
   light2: {fileID: 559997257}
-  obj: 6
 --- !u!4 &1717978895 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7750370834962885026, guid: b7ed1f58ec447ad4fb0c93a62eb4c4b6, type: 3}
@@ -53023,7 +53008,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 3967265757108510945, guid: f101a2b4504c3d04a95511ba8b3543e3, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6895031509859720304, guid: f101a2b4504c3d04a95511ba8b3543e3, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7615726822119726547, guid: f101a2b4504c3d04a95511ba8b3543e3, type: 3}
+    - {fileID: 6895031509859720304, guid: f101a2b4504c3d04a95511ba8b3543e3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f101a2b4504c3d04a95511ba8b3543e3, type: 3}
 --- !u!4 &1787323482 stripped
 Transform:
@@ -53386,6 +53381,55 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 210442451396089719, guid: 1696222c72e89ab4f9026119ef17826b, type: 3}
   m_PrefabInstance: {fileID: 1795048243}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1796141080 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1453311592774380472, guid: f101a2b4504c3d04a95511ba8b3543e3, type: 3}
+  m_PrefabInstance: {fileID: 1993013593}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1796141081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1796141080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8545a0f2d246b874c98ce167fa75ed1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obj1: {fileID: 1796141080}
+  obj2: {fileID: 1736447368}
+  wood: {fileID: 1717966119}
+--- !u!65 &1796141082
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1796141080}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.52, y: 0.34, z: 0.89}
+  m_Center: {x: 0.0000009536743, y: 0.03200842, z: -0.009009566}
+--- !u!54 &1796141083
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1796141080}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1001 &1797412965
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -59425,6 +59469,83 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2954323153511562563, guid: 4cd248ecb5dd495468c0a783da4a4ae9, type: 3}
   m_PrefabInstance: {fileID: 922050804}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1993013593
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1453311592774380472, guid: f101a2b4504c3d04a95511ba8b3543e3, type: 3}
+      propertyPath: m_Name
+      value: Lock (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1453311592774380472, guid: f101a2b4504c3d04a95511ba8b3543e3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2261057276556505346, guid: f101a2b4504c3d04a95511ba8b3543e3, type: 3}
+      propertyPath: m_RootOrder
+      value: 68
+      objectReference: {fileID: 0}
+    - target: {fileID: 2261057276556505346, guid: f101a2b4504c3d04a95511ba8b3543e3, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2261057276556505346, guid: f101a2b4504c3d04a95511ba8b3543e3, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2261057276556505346, guid: f101a2b4504c3d04a95511ba8b3543e3, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2261057276556505346, guid: f101a2b4504c3d04a95511ba8b3543e3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -15.296
+      objectReference: {fileID: 0}
+    - target: {fileID: 2261057276556505346, guid: f101a2b4504c3d04a95511ba8b3543e3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.041
+      objectReference: {fileID: 0}
+    - target: {fileID: 2261057276556505346, guid: f101a2b4504c3d04a95511ba8b3543e3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.582
+      objectReference: {fileID: 0}
+    - target: {fileID: 2261057276556505346, guid: f101a2b4504c3d04a95511ba8b3543e3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.69384235
+      objectReference: {fileID: 0}
+    - target: {fileID: 2261057276556505346, guid: f101a2b4504c3d04a95511ba8b3543e3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.000000006174014
+      objectReference: {fileID: 0}
+    - target: {fileID: 2261057276556505346, guid: f101a2b4504c3d04a95511ba8b3543e3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.720127
+      objectReference: {fileID: 0}
+    - target: {fileID: 2261057276556505346, guid: f101a2b4504c3d04a95511ba8b3543e3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.00000012208893
+      objectReference: {fileID: 0}
+    - target: {fileID: 2261057276556505346, guid: f101a2b4504c3d04a95511ba8b3543e3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2261057276556505346, guid: f101a2b4504c3d04a95511ba8b3543e3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 267.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 2261057276556505346, guid: f101a2b4504c3d04a95511ba8b3543e3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3967265757108510945, guid: f101a2b4504c3d04a95511ba8b3543e3, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f101a2b4504c3d04a95511ba8b3543e3, type: 3}
 --- !u!1001 &1994899688
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -59450,7 +59571,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2457273537968821494, guid: fbac80f280a03844bbdc56acff09ba24, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -30.33
+      value: -30.277
       objectReference: {fileID: 0}
     - target: {fileID: 2457273537968821494, guid: fbac80f280a03844bbdc56acff09ba24, type: 3}
       propertyPath: m_LocalPosition.y
@@ -59458,7 +59579,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2457273537968821494, guid: fbac80f280a03844bbdc56acff09ba24, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -16.739
+      value: -16.737
       objectReference: {fileID: 0}
     - target: {fileID: 2457273537968821494, guid: fbac80f280a03844bbdc56acff09ba24, type: 3}
       propertyPath: m_LocalRotation.w
@@ -59522,7 +59643,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 112
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &1994899695
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59535,20 +59656,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8545a0f2d246b874c98ce167fa75ed1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key_lock: {fileID: 0}
-  key_lock_2: {fileID: 0}
-  skull: {fileID: 0}
-  skull_2: {fileID: 0}
-  knife: {fileID: 0}
-  knife_2: {fileID: 0}
-  goblet: {fileID: 0}
-  goblet_2: {fileID: 0}
-  key: {fileID: 1994899689}
-  key_2: {fileID: 1700847276}
+  obj1: {fileID: 1994899689}
+  obj2: {fileID: 1700847276}
   wood: {fileID: 1717966119}
-  light: {fileID: 0}
-  light2: {fileID: 0}
-  obj: 5
 --- !u!65 &1994899696
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -60505,6 +60615,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8358542452837294435, guid: b1f6f62f2f44c9d4b9b0ba6ce85da082, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 8358542452837294461, guid: b1f6f62f2f44c9d4b9b0ba6ce85da082, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -60515,7 +60629,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8358542452837294461, guid: b1f6f62f2f44c9d4b9b0ba6ce85da082, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.47
+      value: 5.802
       objectReference: {fileID: 0}
     - target: {fileID: 8358542452837294461, guid: b1f6f62f2f44c9d4b9b0ba6ce85da082, type: 3}
       propertyPath: m_LocalPosition.z
@@ -63528,7 +63642,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 112
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &2107449773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63541,20 +63655,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8545a0f2d246b874c98ce167fa75ed1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key_lock: {fileID: 0}
-  key_lock_2: {fileID: 0}
-  skull: {fileID: 0}
-  skull_2: {fileID: 0}
-  knife: {fileID: 2107449767}
-  knife_2: {fileID: 1434701521}
-  goblet: {fileID: 0}
-  goblet_2: {fileID: 0}
-  key: {fileID: 0}
-  key_2: {fileID: 0}
+  obj1: {fileID: 2107449767}
+  obj2: {fileID: 1434701521}
   wood: {fileID: 1717966119}
-  light: {fileID: 0}
-  light2: {fileID: 0}
-  obj: 3
 --- !u!65 &2107449774
 BoxCollider:
   m_ObjectHideFlags: 0

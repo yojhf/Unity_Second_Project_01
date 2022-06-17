@@ -41,7 +41,9 @@
      <Compile Include="Assets\BrokenVector\LowPolyDungeon\Demo Scenes\Scrpits\DoorTrigger.cs" />
      <Compile Include="Assets\BrokenVector\LowPolyDungeon\Demo Scenes\Scrpits\Key_Object.cs" />
      <Compile Include="Assets\BrokenVector\LowPolyDungeon\Demo Scenes\MouseCamLook.cs" />
+     <Compile Include="Assets\BrokenVector\LowPolyDungeon\Demo Scenes\Scrpits\Shelf.cs" />
      <Compile Include="Assets\BrokenVector\LowPolyDungeon\Demo Scenes\Scrpits\DoorTrigger2.cs" />
+     <Compile Include="Assets\BrokenVector\LowPolyDungeon\Demo Scenes\Scrpits\Re_object.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity 2021.3.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>

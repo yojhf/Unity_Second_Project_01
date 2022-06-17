@@ -351,6 +351,8 @@
 "Assets/BrokenVector/LowPolyDungeon/Demo Scenes/Scrpits/DoorTrigger2.cs"
 "Assets/BrokenVector/LowPolyDungeon/Demo Scenes/Scrpits/Key_Object.cs"
 "Assets/BrokenVector/LowPolyDungeon/Demo Scenes/Scrpits/Pickup.cs"
+"Assets/BrokenVector/LowPolyDungeon/Demo Scenes/Scrpits/Re_object.cs"
+"Assets/BrokenVector/LowPolyDungeon/Demo Scenes/Scrpits/Shelf.cs"
 -langversion:9.0
 
 /deterministic

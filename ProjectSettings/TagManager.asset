@@ -7,6 +7,7 @@ TagManager:
   - hold
   - hold2
   - hold3
+  - wood
   layers:
   - Default
   - TransparentFX
