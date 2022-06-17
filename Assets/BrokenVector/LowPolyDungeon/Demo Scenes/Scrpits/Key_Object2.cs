@@ -25,8 +25,8 @@ public class Key_Object2 : MonoBehaviour
     {
         if (other.tag == woodsc.tag)
         {
-            objsc2.GetComponent<Renderer>().enabled = true; // ·»´õ
-            script.shelfCheck(); // ¼ø¼­Ã¼Å©(·»´õ ÇÊ¿ä)
+            objsc2.GetComponent<Renderer>().enabled = true; // ï¿½ï¿½ï¿½ï¿½
+            script.shelfCheck(); // ï¿½ï¿½ï¿½ï¿½Ã¼Å©(ï¿½ï¿½ï¿½ï¿½ ï¿½Ê¿ï¿½)
             if (objsc2.GetComponent<Renderer>().enabled == true)
             {
                 Destroy(objsc1);

@@ -14,6 +14,7 @@ public class Shelf : MonoBehaviour
 
     static bool[] check = new bool[] { false, false, false, false, false };
     // private Re_object script;
+    public int obj_count = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -120,6 +121,15 @@ public class Shelf : MonoBehaviour
 
                 return;
             }
+            //else if ()
+            //{
+            //    Debug.Log("완료");
+            //    obj1.GetComponent<Renderer>().enabled = true;
+            //    obj2.GetComponent<Renderer>().enabled = true;
+            //    obj3.GetComponent<Renderer>().enabled = true;
+            //    obj4.GetComponent<Renderer>().enabled = true;
+            //    obj5.GetComponent<Renderer>().enabled = true;
+            //}
         }
 
         Debug.Log("아직 문제없음");
@@ -127,14 +137,13 @@ public class Shelf : MonoBehaviour
         light2.GetComponent<Light>().color = new Color(0, 255, 0, 255);
         light.GetComponent<Light>().range = 0.23F;
         light2.GetComponent<Light>().range = 0.23F;
-
+        obj_count += 1;
+        Debug.Log(obj_count);
+        if(obj_count == 5){
+            Debug.Log(obj_count);
+            Debug.Log("문열림");
+            light.GetComponent<Light>().color = new Color(0, 255, 255, 255);
+            light2.GetComponent<Light>().color = new Color(0, 255, 255, 255);
+        }
     }
-
-
-
-    // 조건1 : 5개 랜더 다 트루
-    // 조건2 : 레버 로테이션이 변경
-    // 조건3 : 5개의 랜더가 하나라도 false가 있으면 레버 움직이면 안됨
-    // 문열림
-
 }

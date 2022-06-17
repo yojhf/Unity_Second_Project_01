@@ -14,6 +14,7 @@ public class Shelf2 : MonoBehaviour
 
     static bool[] check = new bool[] { false, false, false, false, false };
     // private Re_object script;
+    public int obj_countsc = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -28,7 +29,7 @@ public class Shelf2 : MonoBehaviour
 
     public void shelfCheck()
     {
-        Debug.Log("½ÇÇà");
+        Debug.Log("ï¿½ï¿½ï¿½ï¿½");
         bool flag = false;
         check[0] = objsc1.GetComponent<Renderer>().enabled;
         check[1] = objsc2.GetComponent<Renderer>().enabled;
@@ -42,7 +43,7 @@ public class Shelf2 : MonoBehaviour
             if (check[i] == true) { flag = true; }
             if (flag && !check[0] && !check[i])
             {
-                Debug.Log("¹º°¡ Àß¸øµÊ");
+                Debug.Log("ï¿½ï¿½ï¿½ï¿½ ï¿½ß¸ï¿½ï¿½ï¿½");
                 objsc1.GetComponent<Renderer>().enabled = false;
                 objsc2.GetComponent<Renderer>().enabled = false;
                 objsc3.GetComponent<Renderer>().enabled = false;
@@ -58,7 +59,7 @@ public class Shelf2 : MonoBehaviour
             }
             else if (flag && !check[1] && !check[i])
             {
-                Debug.Log("¹º°¡ Àß¸øµÊ1");
+                Debug.Log("ï¿½ï¿½ï¿½ï¿½ ï¿½ß¸ï¿½ï¿½ï¿½1");
                 objsc1.GetComponent<Renderer>().enabled = true;
                 objsc2.GetComponent<Renderer>().enabled = false;
                 objsc3.GetComponent<Renderer>().enabled = false;
@@ -74,7 +75,7 @@ public class Shelf2 : MonoBehaviour
             }
             else if (flag && !check[2] && !check[i])
             {
-                Debug.Log("¹º°¡ Àß¸øµÊ2");
+                Debug.Log("ï¿½ï¿½ï¿½ï¿½ ï¿½ß¸ï¿½ï¿½ï¿½2");
                 objsc1.GetComponent<Renderer>().enabled = true;
                 objsc2.GetComponent<Renderer>().enabled = true;
                 objsc3.GetComponent<Renderer>().enabled = false;
@@ -90,7 +91,7 @@ public class Shelf2 : MonoBehaviour
             }
             else if (flag && !check[3] && !check[i])
             {
-                Debug.Log("¹º°¡ Àß¸øµÊ3");
+                Debug.Log("ï¿½ï¿½ï¿½ï¿½ ï¿½ß¸ï¿½ï¿½ï¿½3");
                 objsc1.GetComponent<Renderer>().enabled = true;
                 objsc2.GetComponent<Renderer>().enabled = true;
                 objsc3.GetComponent<Renderer>().enabled = true;
@@ -106,7 +107,7 @@ public class Shelf2 : MonoBehaviour
             }
             else if (flag && !check[4] && !check[i])
             {
-                Debug.Log("¹º°¡ Àß¸øµÊ3");
+                Debug.Log("ï¿½ï¿½ï¿½ï¿½ ï¿½ß¸ï¿½ï¿½ï¿½3");
                 objsc1.GetComponent<Renderer>().enabled = true;
                 objsc2.GetComponent<Renderer>().enabled = true;
                 objsc3.GetComponent<Renderer>().enabled = true;
@@ -122,12 +123,18 @@ public class Shelf2 : MonoBehaviour
             }
         }
 
-        Debug.Log("¾ÆÁ÷ ¹®Á¦¾øÀ½");
+        Debug.Log("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
         lightsc.GetComponent<Light>().color = new Color(0, 255, 0, 255);
         lightsc2.GetComponent<Light>().color = new Color(0, 255, 0, 255);
         lightsc.GetComponent<Light>().range = 0.23F;
         lightsc2.GetComponent<Light>().range = 0.23F;
-
+        obj_countsc += 1;
+        if(obj_countsc == 5){
+            Debug.Log(obj_countsc);
+            Debug.Log("ë¬¸ì—´ë¦¼");
+            lightsc.GetComponent<Light>().color = new Color(0, 255, 255, 255);
+            lightsc2.GetComponent<Light>().color = new Color(0, 255, 255, 255);
+        }
     }
 
 }
