@@ -24,7 +24,8 @@ public class DoorTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        Debug.Log(h_count);
+        Debug.Log(floor);
     }
 
     void OnTriggerEnter(Collider other)
