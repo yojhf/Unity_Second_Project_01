@@ -39,10 +39,9 @@ public class Shelf : MonoBehaviour
         for (int i = 4; i >= 0; i--)
         {
             Debug.Log(flag);
-            if(check[i] == true) { 
-                flag = true; Debug.Log(flag+"ㄷㅏ");
-            }
-            if(flag && !check[0]) { 
+            if(check[i] == true) { flag = true;}
+            if (flag && !check[0] && !check[i])
+            {
                 Debug.Log("뭔가 잘못됨");
                 obj1.GetComponent<Renderer>().enabled = false;
                 obj2.GetComponent<Renderer>().enabled = false;
@@ -56,45 +55,10 @@ public class Shelf : MonoBehaviour
                 light2.GetComponent<Light>().range = 0.23F;
 
                 return;
-            }else if(flag && !check[1]) { 
-                Debug.Log("뭔가 잘못됨");
-                obj2.GetComponent<Renderer>().enabled = false;
-                obj3.GetComponent<Renderer>().enabled = false;
-                obj4.GetComponent<Renderer>().enabled = false;
-                obj5.GetComponent<Renderer>().enabled = false;
-
-                light.GetComponent<Light>().color = new Color(255, 0, 0, 255);
-                light2.GetComponent<Light>().color = new Color(255, 0, 0, 255);
-                light.GetComponent<Light>().range = 0.23F;
-                light2.GetComponent<Light>().range = 0.23F;
-
-                return;
-            }else if(flag && !check[2]) { 
-                Debug.Log("뭔가 잘못됨");
-                obj3.GetComponent<Renderer>().enabled = false;
-                obj4.GetComponent<Renderer>().enabled = false;
-                obj5.GetComponent<Renderer>().enabled = false;
-
-                light.GetComponent<Light>().color = new Color(255, 0, 0, 255);
-                light2.GetComponent<Light>().color = new Color(255, 0, 0, 255);
-                light.GetComponent<Light>().range = 0.23F;
-                light2.GetComponent<Light>().range = 0.23F;
-
-                return;
-            }else if(flag && !check[3]) { 
-                Debug.Log("뭔가 잘못됨");
-                obj4.GetComponent<Renderer>().enabled = false;
-                obj5.GetComponent<Renderer>().enabled = false;
-
-                light.GetComponent<Light>().color = new Color(255, 0, 0, 255);
-                light2.GetComponent<Light>().color = new Color(255, 0, 0, 255);
-                light.GetComponent<Light>().range = 0.23F;
-                light2.GetComponent<Light>().range = 0.23F;
-
-                return;
             }
-            /*else if(flag && !check[1]) { 
-                Debug.Log("뭔가 잘못됨2");
+            else if (flag && !check[1] && !check[i])
+            {
+                Debug.Log("뭔가 잘못됨1");
                 obj1.GetComponent<Renderer>().enabled = true;
                 obj2.GetComponent<Renderer>().enabled = false;
                 obj3.GetComponent<Renderer>().enabled = false;
@@ -108,8 +72,9 @@ public class Shelf : MonoBehaviour
 
                 return;
             }
-            else if(flag && !check[2]) { 
-                Debug.Log("뭔가 잘못됨3");
+            else if (flag && !check[2] && !check[i])
+            {
+                Debug.Log("뭔가 잘못됨2");
                 obj1.GetComponent<Renderer>().enabled = true;
                 obj2.GetComponent<Renderer>().enabled = true;
                 obj3.GetComponent<Renderer>().enabled = false;
@@ -122,13 +87,54 @@ public class Shelf : MonoBehaviour
                 light2.GetComponent<Light>().range = 0.23F;
 
                 return;
-            }*/
+            }
+            else if (flag && !check[3] && !check[i])
+            {
+                Debug.Log("뭔가 잘못됨3");
+                obj1.GetComponent<Renderer>().enabled = true;
+                obj2.GetComponent<Renderer>().enabled = true;
+                obj3.GetComponent<Renderer>().enabled = true;
+                obj4.GetComponent<Renderer>().enabled = false;
+                obj5.GetComponent<Renderer>().enabled = false;
 
+                light.GetComponent<Light>().color = new Color(255, 0, 0, 255);
+                light2.GetComponent<Light>().color = new Color(255, 0, 0, 255);
+                light.GetComponent<Light>().range = 0.23F;
+                light2.GetComponent<Light>().range = 0.23F;
+
+                return;
+            }
+            else if (flag && !check[4] && !check[i])
+            {
+                Debug.Log("뭔가 잘못됨3");
+                obj1.GetComponent<Renderer>().enabled = true;
+                obj2.GetComponent<Renderer>().enabled = true;
+                obj3.GetComponent<Renderer>().enabled = true;
+                obj4.GetComponent<Renderer>().enabled = true;
+                obj5.GetComponent<Renderer>().enabled = false;
+
+                light.GetComponent<Light>().color = new Color(255, 0, 0, 255);
+                light2.GetComponent<Light>().color = new Color(255, 0, 0, 255);
+                light.GetComponent<Light>().range = 0.23F;
+                light2.GetComponent<Light>().range = 0.23F;
+
+                return;
+            }
         }
+
         Debug.Log("아직 문제없음");
         light.GetComponent<Light>().color = new Color(0, 255, 0, 255);
         light2.GetComponent<Light>().color = new Color(0, 255, 0, 255);
         light.GetComponent<Light>().range = 0.23F;
         light2.GetComponent<Light>().range = 0.23F;
+
     }
+
+
+
+    // 조건1 : 5개 랜더 다 트루
+    // 조건2 : 레버 로테이션이 변경
+    // 조건3 : 5개의 랜더가 하나라도 false가 있으면 레버 움직이면 안됨
+    // 문열림
+
 }
