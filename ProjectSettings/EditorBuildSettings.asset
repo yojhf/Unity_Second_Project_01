@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/BrokenVector/LowPolyDungeon/Demo Scenes/Dungeon_Stage3.unity
     guid: ac45a0796b01b4746a32d4967e6406e8
+  - enabled: 1
+    path: Assets/BrokenVector/LowPolyDungeon/Demo Scenes/Game_Over.unity
+    guid: c52d8fee718e2dc49920333c4d96f50a
   m_configObjects: {}

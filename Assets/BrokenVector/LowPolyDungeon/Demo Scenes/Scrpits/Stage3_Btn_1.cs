@@ -8,15 +8,15 @@ public class Stage3_Btn_1 : MonoBehaviour
     [SerializeField] GameObject Btn_brown;
     [SerializeField] GameObject Btn_green;
 
-    // private Stage3_Door_open1 script;
+    private Stage3_Door_open1 script;
 
     bool click = false;
-    public static string color = "";
+    public string color = "";
 
     // Start is called before the first frame updsate
     void Start()
     {
-        // script = GameObject.Find("Player").GetComponent<Stage3_Door_open1>();
+        script = GameObject.Find("Player").GetComponent<Stage3_Door_open1>();
     }
 
     // Update is called once per frame
@@ -44,7 +44,7 @@ public class Stage3_Btn_1 : MonoBehaviour
                     click = true;
                     color = "brown";
                 }
-                // script.open_door();
+                script.open_door();
             }
         }
 
@@ -55,15 +55,12 @@ public class Stage3_Btn_1 : MonoBehaviour
             click_event();
         }else{
             if( color == "red"){
-                Debug.Log("올려");
                 Btn_red.transform.position = new Vector3(-36.751f, 7.971f, 34.467f);
             }
             if( color == "green"){
-                Debug.Log("올려");
                 Btn_green.transform.position = new Vector3(-33.53f, 7.934f, 32.31f);
             }
             if( color == "brown"){
-                Debug.Log("올려");
                 Btn_brown.transform.position = new Vector3(-39.8f, 7.987f, 32.25f);
             }
         }
