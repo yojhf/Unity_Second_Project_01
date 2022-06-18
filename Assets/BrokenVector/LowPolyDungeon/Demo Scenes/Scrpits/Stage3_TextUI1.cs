@@ -5,12 +5,15 @@ using UnityEngine.UI;
 
 public class Stage3_TextUI1 : MonoBehaviour
 {
+    [SerializeField] GameObject switch_bar;
     public Text tx;
-    private string m_Text = "»¡°£»ö-°¥»ö-ÃÊ·Ï»ö";
+    private string m_Text = "ë¹¨ê°„ìƒ‰-ì´ˆë¡ìƒ‰-ê°ˆìƒ‰-ì´ˆë¡ìƒ‰-ë¹¨ê°•ìƒ‰-ì´ˆë¡ìƒ‰";
     // Start is called before the first frame update
+    bool trick = false;
+
     public void Start()
     {
-        StartCoroutine(_typing());
+
     }
 
     // Update is called once per frame
@@ -18,23 +21,29 @@ public class Stage3_TextUI1 : MonoBehaviour
     {
         
     }
-    public IEnumerator _typing()
-    {
-        yield return new WaitForSeconds(0f);
 
-        
+    public void typing_start(){
+        if(trick == false){
+            StartCoroutine(typing());
+        }
+    }
+
+    public IEnumerator typing()
+    {
+        Debug.Log(trick);
+        trick = true;
+        switch_bar.transform.localEulerAngles = new Vector3(20, 00, 0);
+        Debug.Log(trick);
         for (int i = 0; i <= m_Text.Length; i++)
         {
-           
-            Debug.Log(i + "¾ÆÀÌ");
+            // Debug.Log(i + "ì•„ì´");
             tx.text = m_Text.Substring(0, i);
 
             yield return new WaitForSeconds(0.15f);
         }
-        
         tx.text = "";
-        
-
-
+        trick = false;
+        yield return new WaitForSeconds(5.0f);
+        switch_bar.transform.localEulerAngles = new Vector3(-41.869f, 00, 0);
     }
 }

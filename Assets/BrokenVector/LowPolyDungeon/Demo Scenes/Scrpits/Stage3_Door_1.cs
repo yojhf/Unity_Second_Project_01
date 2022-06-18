@@ -7,8 +7,6 @@ public class Stage3_Door_1 : MonoBehaviour
     [SerializeField] GameObject switch_bar;
     public static bool push = false;
     private Stage3_TextUI1 script;
-    public float rotateSpeed = 5.0f;
-
 
     // Start is called before the first frame updsate
     void Start()
@@ -39,21 +37,15 @@ public class Stage3_Door_1 : MonoBehaviour
     {
         if (push)
         {
-            Debug.Log("¤¸¤§");
-            Debug.Log(switch_bar.GetComponent<Stage3_TextUI1>().enabled + "Àü");
             switch_bar.GetComponent<Stage3_TextUI1>().enabled = true;
-            script.Start();
-            Debug.Log(switch_bar.GetComponent<Stage3_TextUI1>().enabled + "ÈÄ");
-            switch_bar.transform.localEulerAngles = new Vector3(20, 00, 0);
+            script.typing_start();
+            // switch_bar.transform.localEulerAngles = new Vector3(20, 00, 0);
             push = false;
         }
         else
         {
             switch_bar.GetComponent<Stage3_TextUI1>().enabled = false;
-            switch_bar.transform.localEulerAngles = new Vector3(-41.869f, 00, 0);
-
-
+            // switch_bar.transform.localEulerAngles = new Vector3(-41.869f, 00, 0);
         }
-
     }
 }
